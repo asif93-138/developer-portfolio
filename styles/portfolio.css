@@ -166,9 +166,111 @@ section {
     width: 100%;
     padding: 18px 30px;
 }
+
+textarea {
+  height: 150px;
+}
 input {
     height: 64px;
 }
 .contact a {
     text-decoration: none;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 576px) {
+  .skills-container {
+      display: block;
+      
+  }
+
+  .resume-content {
+      display: block;
+      padding: 20px
+  }
+
+  .about {
+
+      
+      padding: 40px;
+      
+  }
+
+  .section-title, .section-description {
+    
+      margin-bottom: 10px;
+  }
+
+  .about-info-container {
+      display: block;
+    
+  }
+
+  .about-info {
+      margin: 10px 0;
+  }
+  .contact {
+      
+      gap: 10px;
+      flex-direction: column-reverse;
+      padding: 20px;
+  }
+
+  .contact input[type="text"], input[type="email"], textarea {
+      margin-bottom: 15px;
+      border: 0;
+      max-width: 100%;
+      height: auto;
+      padding: 0 0 0 5px;
+  }
+
+  textarea {
+    height: auto;
+  }
+
+  nav {
+    display: block;
+    
+    padding: 10px;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav li {
+    
+    margin: 10px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+  }
+
+  .banner img {
+    max-width: 100%;
+  }
+
+  .banner div {
+    padding: 10px;
+  }
+  
+  .nav-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+}
+
+.hide {
+    display: none;
 }
